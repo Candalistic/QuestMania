@@ -9,4 +9,34 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.mania.quest.questmania.MainActivity">
 
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quests"
+        android:id="@+id/quests_btn"
+        android:layout_marginTop="52dp"
+        android:onClick="onQuestsClick"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Awards"
+        android:id="@+id/button"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/quests_btn"
+        android:onClick="onAwardsClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/button"
+        android:layout_toEndOf="@+id/quests_btn"
+        android:onClick="onSettingsClick"/>
+
 </RelativeLayout>
