@@ -11,32 +11,37 @@
 
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/quests"
         android:id="@+id/quests_btn"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="57dp"
         android:onClick="onQuestsClick"
+        android:textSize="24sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Awards"
         android:id="@+id/button"
-        android:layout_centerVertical="true"
-        android:layout_toStartOf="@+id/quests_btn"
-        android:onClick="onAwardsClick" />
+        android:onClick="onAwardsClick"
+        android:textSize="20sp"
+        android:layout_below="@+id/quests_btn"
+        android:layout_alignStart="@+id/quests_btn"
+        android:layout_marginTop="28dp" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Settings"
         android:id="@+id/button2"
-        android:layout_alignTop="@+id/button"
-        android:layout_toEndOf="@+id/quests_btn"
-        android:onClick="onSettingsClick"/>
+        android:onClick="onSettingsClick"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignEnd="@+id/button" />
 
 </RelativeLayout>
